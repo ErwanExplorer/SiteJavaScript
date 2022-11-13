@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Playfair+Display:ital,wght@0,600;1,600&family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conseil Automobile</title>
+</head>
+<body>
+    <section>
+        <div class="cercle">
+
+        </div>
+        <header>
+            <a href="#">
+                <img src="media/logo.png" class="logo">
+            </a>
+        </header>
+
+        <div class="container">
+            <div class="texte">
+                <h2>Spécialiste véhicules <span>Sportifs & Luxueux</span></h2>
+                <p>Conseil Automobile est une entreprise spécialisée dans la vente de véhicules sportifs et luxueux. Nous vous proposons un large choix de véhicules d'occasion et de véhicules neufs. Nous vous accompagnons dans votre projet d'achat et vous conseillons dans votre choix.</p>
+
+                <a href="mailto:contact@spacetech.fr" class="btn">Nous-Contacter</a>
+            </div>
+            <div class="imgBox">
+                <img src="media/ferari.png" class="ferari">
+            </div>
+        </div>
+        <ul class="catalogue">
+            <li><img src="media/ferari.png" onclick="imgSlider('media/ferari.png');changeCouleurCercle('#f43839')"></li>
+            <li><img src="media/Lambo.png" onclick="imgSlider('media/Lambo.png');changeCouleurCercle('#2dc250')"></li>
+            <li><img src="media/amg.png" onclick="imgSlider('media/amg.png');changeCouleurCercle('#939090')"></li>
+            <li><img src="media/bentley.png" onclick="imgSlider('media/bentley.png');changeCouleurCercle('#9dbfcc')"></li>
+        </ul>
+
+        <ul class="reseau">
+            <li><a href=""><img src="media/fb.png"></a></li>
+            <li><a href=""><img src="media/insta.png"></a></li>
+            <li><a href=""><img src="media/youtube.png"></a></li>
+        </ul>
+
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.ferari').src = anything;
+            console.log('Changement de voiture');
+        }
+        function changeCouleurCercle(color) {
+            const cercle = document.querySelector('.cercle');
+            cercle.style.background = color;
+        }
+
+    </script>
+
+
+</body>
+</html>
